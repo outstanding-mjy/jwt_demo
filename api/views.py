@@ -9,7 +9,6 @@ import uuid
 from api.extensions.auth import JwtQueryParamsAuthentication
 from api.utils.jwt_auth import create_token
 
-
 class LoginView(APIView):
     '''
     用户登录
@@ -62,7 +61,5 @@ class ProOrderView(APIView):
     def get(self, request, *args, **kwargs):
         print(request.user)
         return Response('订单列表')
-
-
 
 
